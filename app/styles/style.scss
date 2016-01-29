@@ -1,0 +1,38 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+  padding: 0;
+}
+div.vehicle-wrap {
+  width: 250px;
+  height: 250px;
+  margin: 0px;
+}
+div.vehicle-image {
+  height: 150px;
+}
+div.vehicle-content {
+  height: 100px;
+}
+.top-margin {
+  margin-top: 20px;
+}
+.loading-img {
+  padding: 10px;
+}
+.hide-bullets {
+  list-style:none;
+  margin-left: -40px;
+  margin-top:20px;
+}
+
+.thumbnail {
+  padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+  width: 100%;
+}

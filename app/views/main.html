@@ -1,0 +1,226 @@
+<div class="content">
+    <div class="col-md-12">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#featured" data-toggle="tab">Featured</a></li>
+        <li><a href="#newcars" data-toggle="tab">New cars</a></li>
+        <li><a href="#usedcars" data-toggle="tab">Used Cars</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <img src="images/loader1.gif" id="loader" width="100px"/>
+        <div id="featured" class="tab-pane fade in active">
+          <div class="row top-margin">
+            <div class="col-md-12">
+              <div class="col-xs-12 col-sm-12 col-md-12 vehicle-wrap" ng-repeat="car in cars" data-toggle="modal" data-target="#car-modal">
+                <div ng-click="setCarID(car.ID)">
+                  <div class="vehicle-image img-responsive">
+                    <img src="images/fiesta.jpg" class="img-thumbnail" />
+                  </div>
+                  <div class="vehicle-content">
+                    <b>{{car.Model_Year + ' ' + car.Vehicle_Manufacturer_Name + ' ' + car.Veh_Mfr_Code}}</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="newcars" class="tab-pane fade">
+          <div class="row top-margin">
+            <div class="col-md-12">
+              <div class="col-xs-12 col-sm-12 col-md-12 vehicle-wrap" ng-repeat="car in cars" data-toggle="modal" data-target="#car-modal">
+                <div ng-click="setCarID(car.ID)">
+                  <div class="vehicle-image img-responsive">
+                    <img src="images/fiesta.jpg" class="img-thumbnail" />
+                  </div>
+                  <div class="vehicle-content">
+                    <b>{{car.Model_Year + ' ' + car.Vehicle_Manufacturer_Name + ' ' + car.Veh_Mfr_Code}}</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="usedcars" class="tab-pane fade">
+          <div class="row top-margin">
+            <div class="col-md-12">
+              <div class="col-xs-12 col-sm-12 col-md-12 vehicle-wrap" ng-repeat="car in cars" data-toggle="modal" data-target="#car-modal">
+                <div ng-click="setCarID(car.ID)">
+                  <div class="vehicle-image img-responsive">
+                    <img src="images/fiesta.jpg" class="img-thumbnail" />
+                  </div>
+                  <div class="vehicle-content">
+                    <b>{{car.Model_Year + ' ' + car.Vehicle_Manufacturer_Name + ' ' + car.Veh_Mfr_Code}}</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div id="car-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;  </button>
+          <h4 class="modal-title" id="myModalLabel">
+            Car Information
+          </h4>
+        </div>
+        <div class="modal-body">
+          <img src="images/loader1.gif" id="loader-modal" width="80px"/>
+          <div class="row" id="car-info-modal">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-12">
+                  <img src="images/fiesta.jpg" width="500px" />
+                </div>
+                <div class="col-md-12">
+                  <ul class="hide-bullets">
+                    <li class="col-sm-3">
+                      <a class="thumbnail">
+                        <img src="images/fiesta.jpg" class="img-thumbnail" />
+                      </a>
+                    </li>
+                    <li class="col-sm-3">
+                      <a class="thumbnail">
+                        <img src="images/fiesta.jpg" class="img-thumbnail" />
+                      </a>
+                    </li>
+                    <li class="col-sm-3">
+                      <a class="thumbnail">
+                        <img src="images/fiesta.jpg" class="img-thumbnail" />
+                      </a>
+                    </li>
+                    <li class="col-sm-3">
+                      <a class="thumbnail">
+                        <img src="images/fiesta.jpg" class="img-thumbnail" />
+                      </a>
+                    </li>
+                    <li class="col-sm-3">
+                      <a class="thumbnail">
+                        <img src="images/fiesta.jpg" class="img-thumbnail" />
+                      </a>
+                    </li>
+                    <li class="col-sm-3">
+                      <a class="thumbnail">
+                        <img src="images/fiesta.jpg" class="img-thumbnail" />
+                      </a>
+                    </li>
+                    <li class="col-sm-3">
+                      <a class="thumbnail">
+                        <img src="images/fiesta.jpg" class="img-thumbnail" />
+                      </a>
+                    </li>
+                    <li class="col-sm-3">
+                      <a class="thumbnail">
+                        <img src="images/fiesta.jpg" class="img-thumbnail" />
+                      </a>
+                    </li>
+                    <li class="col-sm-3">
+                      <a class="thumbnail">
+                        <img src="images/fiesta.jpg" class="img-thumbnail" />
+                      </a>
+                    </li>
+                    <li class="col-sm-3">
+                      <a class="thumbnail">
+                        <img src="images/fiesta.jpg" class="img-thumbnail" />
+                      </a>
+                    </li>
+                    <li class="col-sm-3">
+                      <a class="thumbnail">
+                        <img src="images/fiesta.jpg" class="img-thumbnail" />
+                      </a>
+                    </li>
+                    <li class="col-sm-3">
+                      <a class="thumbnail">
+                        <img src="images/fiesta.jpg" class="img-thumbnail" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <h4><b>{{carinfo.Model_Year + ' ' + carinfo.Vehicle_Manufacturer_Name + ' ' + carinfo.Veh_Mfr_Code}}</b></h4>
+                  </div>
+                  <table class="table table-striped table-responsive table-hover table-bordered">
+                    <tbody>
+                    <tr>
+                      <td><label>Year</label></td>
+                      <td>{{carinfo.Model_Year}}</td>
+                    </tr>
+                    <tr>
+                      <td><label>Manufacturer</label></td>
+                      <td>{{carinfo.Vehicle_Manufacturer_Name}}</td>
+                    </tr>
+                    <tr>
+                      <td><label>Code</label></td>
+                      <td>{{carinfo.Veh_Mfr_Code}}</td>
+                    </tr>
+                    <tr>
+                      <td><label>Type</label></td>
+                      <td>{{carinfo.Vehicle_Type}}</td>
+                    </tr>
+                    <tr>
+                      <td><label>Horse Power</label></td>
+                      <td>{{carinfo.Rated_Horsepower}}</td>
+                    </tr>
+                    <tr>
+                      <td><label>No. of Cylinders &amp; Rotors</label></td>
+                      <td>{{carinfo.No_of_Cylinders_and_Rotors}}</td>
+                    </tr>
+                    <tr>
+                      <td><label>Engine Code</label></td>
+                      <td>{{carinfo.Engine_Code}}</td>
+                    </tr>
+                    <tr>
+                      <td><label>Transmission Type</label></td>
+                      <td>{{carinfo.Tested_Transmission_Type}}</td>
+                    </tr>
+                    <tr>
+                      <td><label>No. of Gears</label></td>
+                      <td>{{carinfo.No_of_Gears}}</td>
+                    </tr>
+                    <tr>
+                      <td><label>Drive System</label></td>
+                      <td>{{carinfo.Drive_System_Description}}</td>
+                    </tr>
+                    <tr>
+                      <td><label>Weight (lbs)</label></td>
+                      <td>{{carinfo.Equivalent_Test_Weight_lbs}}</td>
+                    </tr>
+                    <tr>
+                      <td><label>Shift Indicator</label></td>
+                      <td>{{carinfo.Shift_Indicator_Light_Use_Desc}}</td>
+                    </tr>
+                    <tr>
+                      <td><label>Other Info</label></td>
+                      <td>
+                        THC_gmi : {{carinfo.THC_gmi}}<br/>
+                        CO_gmi : {{carinfo.CO_gmi}}<br/>
+                        CO2_gmi : {{carinfo.CO2_gmi}}<br/>
+                        NOx_gmi : {{carinfo.NOx_gmi}}<br/>
+                        PM_gmi : {{carinfo.PM_gmi}}<br/>
+                        CH4_gmi : {{carinfo.CH4_gmi}}<br/>
+                        N2O_gmi : {{carinfo.N2O_gmi}}
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
