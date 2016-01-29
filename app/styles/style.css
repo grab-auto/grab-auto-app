@@ -5,11 +5,11 @@ Error: File to import not found or unreadable: bootstrap-sass-official/assets/st
 1: $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 2: // bower:scss
 3: @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-4: // endbower
-5: 
-6: body {
-7:   padding: 0;
-8: }
+4: @import url('http://fonts.googleapis.com/css?family=Open+Sans');
+5: // endbower
+6: 
+7: body {
+8:   font-family: "Open Sans";
 
 Backtrace:
 style.scss:3
@@ -55,4 +55,4 @@ style.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: bootstrap-sass-official/assets/stylesheets/_bootstrap.scss.\A         on line 3 of style.scss\A \A 1: $icon-font-path: \"../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/\";\A 2: // bower:scss\A 3: @import \"bootstrap-sass-official/assets/stylesheets/_bootstrap.scss\";\A 4: // endbower\A 5: \A 6: body {\A 7:   padding: 0;\A 8: }"; }
+  content: "Error: File to import not found or unreadable: bootstrap-sass-official/assets/stylesheets/_bootstrap.scss.\A         on line 3 of style.scss\A \A 1: $icon-font-path: \"../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/\";\A 2: // bower:scss\A 3: @import \"bootstrap-sass-official/assets/stylesheets/_bootstrap.scss\";\A 4: @import url('http://fonts.googleapis.com/css?family=Open+Sans');\A 5: // endbower\A 6: \A 7: body {\A 8:   font-family: \"Open Sans\";"; }

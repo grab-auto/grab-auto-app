@@ -17,7 +17,13 @@
                     <img src="images/fiesta.jpg" class="img-thumbnail" />
                   </div>
                   <div class="vehicle-content">
-                    <b>{{car.Model_Year + ' ' + car.Vehicle_Manufacturer_Name + ' ' + car.Veh_Mfr_Code}}</b>
+                    <label>{{car.Model_Year + ' ' + car.Vehicle_Manufacturer_Name + ' ' + car.Veh_Mfr_Code}}</label>
+                    <div class="form-group">
+                      {{car.Vehicle_Manufacturer_Name}}
+                    </div>
+                    <div class="form-group">
+                      <label>{{setPrice(car.price)}}</label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -33,7 +39,13 @@
                     <img src="images/fiesta.jpg" class="img-thumbnail" />
                   </div>
                   <div class="vehicle-content">
-                    <b>{{car.Model_Year + ' ' + car.Vehicle_Manufacturer_Name + ' ' + car.Veh_Mfr_Code}}</b>
+                    <label>{{car.Model_Year + ' ' + car.Vehicle_Manufacturer_Name + ' ' + car.Veh_Mfr_Code}}</label>
+                    <div class="form-group">
+                      {{car.Vehicle_Manufacturer_Name}}
+                    </div>
+                    <div class="form-group">
+                      <label>{{setPrice(car.price)}}</label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -49,7 +61,13 @@
                     <img src="images/fiesta.jpg" class="img-thumbnail" />
                   </div>
                   <div class="vehicle-content">
-                    <b>{{car.Model_Year + ' ' + car.Vehicle_Manufacturer_Name + ' ' + car.Veh_Mfr_Code}}</b>
+                    <label>{{car.Model_Year + ' ' + car.Vehicle_Manufacturer_Name + ' ' + car.Veh_Mfr_Code}}</label>
+                    <div class="form-group">
+                      {{car.Vehicle_Manufacturer_Name}}
+                    </div>
+                    <div class="form-group">
+                      <label>{{setPrice(car.price)}}</label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -150,6 +168,10 @@
                   </div>
                   <table class="table table-striped table-responsive table-hover table-bordered">
                     <tbody>
+                    <tr>
+                      <td><label>Price</label></td>
+                      <td>{{setPrice(carinfo.price)}}</td>
+                    </tr>
                     <tr>
                       <td><label>Year</label></td>
                       <td>{{carinfo.Model_Year}}</td>
